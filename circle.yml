@@ -77,7 +77,7 @@ dependencies:
       fi
 
     # Install Terminus
-    - ./bin/install_terminus.sh
+    - sh ./bin/install_terminus.sh
 
     # Install jq
     - >
