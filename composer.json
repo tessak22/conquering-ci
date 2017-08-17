@@ -1,0 +1,81 @@
+{
+  "name": "Conquering CI",
+  "description": "",
+  "version": "0.1.0",
+  "type": "project",
+  "keywords": [],
+  "minimum-stability": "dev",
+  "authors": [
+    {
+    	"name": "Tessa Kriesel",
+    	"email": "me@tessak22.com",
+    	"homepage": "http://tessak22.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "pantheon-systems/wordpress",
+        "version": "4.8",
+        "dist": {
+          "url": "https://github.com/pantheon-systems/WordPress/archive/4.8.zip",
+          "type": "zip"
+        },
+        "source": {
+          "url": "git@github.com:pantheon-systems/WordPress.git",
+          "type": "git",
+          "reference": "4.8"
+        },
+        "type": "wordpress-core",
+        "require": {
+          "johnpbloch/wordpress-core-installer": "~0.1"
+        },
+        "extra": {
+          "wordpress-install-dir": "web/wp"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=5.2",
+    "composer/installers": "~1.0",
+    "vlucas/phpdotenv": "^2.4.0",
+    "wpackagist-plugin/wp-native-php-sessions": "^0.6.0",
+    "wpackagist-plugin/pantheon-advanced-page-cache": "^0.1.4",
+    "wpackagist-plugin/wp-cfm": "^1.4.5",
+    "wpackagist-theme/twentyseventeen": "^1.2",
+    "pantheon-systems/wordpress": "^4.8",
+    "roots/wp-password-bcrypt": "^1.0.0"
+  },
+  "require-dev": {
+    "behat/behat": "^3.1",
+    "behat/mink-extension": "^2.2",
+    "behat/mink-goutte-driver": "^1.2",
+    "pantheon-systems/pantheon-wordpress-upstream-tests": "dev-master",
+    "paulgibbs/behat-wordpress-extension": "dev-master",
+    "squizlabs/php_codesniffer": "*",
+    "wp-coding-standards/wpcs": "dev-master",
+    "phpunit/phpunit": "^6.1",
+    "brain/monkey": "^1.4"
+  },
+  "config": {
+    "vendor-dir": "vendor",
+    "preferred-install": "dist",
+    "secure-http": false
+  },
+  "extra": {
+    "installer-paths": {
+      "web/wp-content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/wp-content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    }
+  }
+}
