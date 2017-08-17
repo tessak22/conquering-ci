@@ -1,0 +1,78 @@
+# Composer Vendor Directory #
+#############################
+vendor/
+
+# Hidden Files #
+################
+.*
+!.gitignore
+!.env-sample
+!.travis.yml
+
+# NPM Modules #
+###############
+node_modules/
+
+# Webroot #
+###########
+!web/
+web/*
+!web/index.php
+!web/wp-cli.yml
+!web/wp-config.php
+!web/wp-content/
+web/wp-content/*
+!web/wp-content/mu-plugins/
+web/wp-content/mu-plugins/*
+!web/wp-content/mu-plugins/alter-wpcfm-config-path.php
+!web/wp-content/plugins/
+web/wp-content/plugins/*
+!web/wp-content/themes
+web/wp-content/themes/*
+!web/wp-content/themes/twentyseventeen-child/
+!web/private/
+web/private/*
+!web/private/config/
+!web/private/scripts/
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+.sass-cache
+
+# PHP Storm #
+#############
+.idea
+
+# Don't ignore Slack icons #
+#################################
+!/web/slack-icons
