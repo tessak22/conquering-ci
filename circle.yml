@@ -77,7 +77,7 @@ dependencies:
       fi
 
     # Install Terminus
-    - chmod 755 ./bin/install_terminus.sh
+    - chmod -R 755 ./bin
     - ./bin/install_terminus.sh
 
     # Install jq
