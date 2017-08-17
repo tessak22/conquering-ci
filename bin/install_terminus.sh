@@ -5,3 +5,8 @@
 	cd "$HOME/terminus"
 	composer install
 	cd -
+else
+	# Otherwise make sure terminus is up to date
+	cd "$HOME/terminus"
+	git pull
+	composer install
