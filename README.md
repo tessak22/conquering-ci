@@ -123,7 +123,7 @@ These steps only need to be performed once, unless noted.
 
 
 ### [Kalabox](http://www.kalabox.io/) Setup
-Replace `project-name` with you Pantheon site slug.
+Replace `project-name` with your Pantheon site slug.
 
 1. Create a new Pantheon site in Kalabox, selecting the Pantheon site associated with the fully built project.
 1. Change directories to `~/Kalabox/project-name`
